@@ -13,6 +13,7 @@ where
     /// `duration`: 干员进场后经过`duration`时间后对生产单元的影响
     /// `signs`: 符号表，用于全局熟悉影响
     fn get_effect(&mut self, duration: Duration, signs: &mut S) -> SkillEffect<T>;
+    
     fn get_during_effect(&mut self, duration: Duration, signs: &mut S) -> SkillEffect<T>
     where
         T: Add<Output = T>,

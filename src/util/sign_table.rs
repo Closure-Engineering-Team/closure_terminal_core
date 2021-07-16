@@ -2,6 +2,7 @@ use std::{
     hash::Hash,
     ops::Add,
 };
+
 ///符号表
 pub trait SignTableHandle {
     type Item: Hash + Sized + Clone;
@@ -31,3 +32,4 @@ pub trait SignTableHandle {
         }
     }
 }
+
